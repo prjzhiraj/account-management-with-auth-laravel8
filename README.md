@@ -12,7 +12,25 @@ email: customer1@email.com, customer2@email.com<br>
 password: 12345678<br>
 
 <img style="width: 100%;" src="/public/img/login_page.JPG"><br><br>
+
+<h2>Log in Page</h2>
+<ol>
+  <li>Use the email and password provided above.</li>
+  <li>Click <b>Login</b> or Hit Enter to login.</li>
+</ol> 
+<br><br>
 <img style="width: 100%;" src="/public/img/book_now_page.JPG"><br><br>
+<h2>Book Now Tab</h2>
+<ol>
+  <li>To Book your schedule, at the left side(Calendar) select the day, and time block.</li>
+  <li>at the right side(Table) choose your Therapist and hit <b>Book Now</b> button</li>
+</ol> 
+<br><br>
 <img style="width: 100%;" src="/public/img/my_booking_page.JPG"><br><br>
+<h2>My Booking Tab</h2>
+<ol>
+  <li>To Cancel your booking, simply press <b>Cancel Booking</b> button</li>
+</ol> 
+<br><br>
 
 # account-management-with-auth-laravel8
