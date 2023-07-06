@@ -4,5 +4,9 @@ create database laravel_knabus<br>
 composer install<br>
 php artisan migrate:fresh --seed<br>
 php artisan serve<br>
+<br>
+credentials:<br>
+email: customer1@email.com, customer2@email.com<br>
+password: 12345678<br>
 
 # account-management-with-auth-laravel8
