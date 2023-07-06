@@ -28,7 +28,7 @@ class AccountsModel extends Model
     }
 
     public static function getAllAccounts(){
-        $query = DB::table('user_accounts')->select('*')->get();
+        $query = DB::table('user_accounts')->select('*')->whereIn('service',['Counseling','Psychiatry'])->get();
         return ($query->count()>0)?$query:false;
     }
 

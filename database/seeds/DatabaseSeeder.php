@@ -11,6 +11,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(create_user_accounts_data::class);
+        $this->call([
+            create_user_accounts_data::class,
+            create_booking_data::class
+        ]);
     }
 }

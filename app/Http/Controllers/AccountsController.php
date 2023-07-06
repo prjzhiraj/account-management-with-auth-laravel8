@@ -47,11 +47,13 @@ class AccountsController extends Controller
 		$this->validate($data, [
 			'fname' => 'required',
 			'lname' => 'required',
+			'service' => 'required',
 			'email' => 'required|email|unique:user_accounts,email',
 			'password' => 'required|min:6|required_with:confirmpassword|same:confirmpassword'
 		],[
 			'fname.required' => 'The First name field is required.',
 			'lname.required' => 'The Last name field is required.',
+			'service.required' => 'The Service field is required.',
 			'email.required' => 'The Email Address field is required.',
 			'email.email' => 'The Email Address must be valid.',
 			'password.required' => 'The Password field is required.',
