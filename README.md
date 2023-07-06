@@ -2,7 +2,7 @@
 
 create database laravel_knabus<br><br>
 
-.env file is provided in this repo.<br>
+.env file with credentials and setup provided inside of file in this repo.<br>
 make sure the .env is setup correctly, check the credentials and database name in .env if matched to your local server (recommended XAMPP)
 
 <b>On your Terminal/Git Bash:</b><br>
