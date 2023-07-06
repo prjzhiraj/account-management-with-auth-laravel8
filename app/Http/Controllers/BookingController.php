@@ -33,4 +33,9 @@ class BookingController extends Controller
 
         return json_encode(['data'=>$request->all()]);
     }
+
+    public function cancelbook(Request $request){
+        Booking::where('id',$request->book_id)->delete();
+        return true;
+    }
 }

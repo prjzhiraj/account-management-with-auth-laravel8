@@ -70,6 +70,7 @@
 									<th>Book Date</th>
 									<th>Service</th>
 									<th>Therapist</th>
+									<th>Action</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -214,7 +215,7 @@
 	var dateValue = [];
 	
 	function getBookedDate(){
-		// var dateValue = [];
+		dateValue = [];
 		$.ajax({
 			url: base_url+'/booking/available-date/',
 			type: 'get',
@@ -330,7 +331,31 @@
 					}
 				});
 			}
-			
+		}
+
+		function cancelbook(book_id){
+				$.ajax({
+					url: base_url+'/booking/cancel-book',
+					type: "post",
+					data: {
+						'book_id' : book_id
+					},
+					dataType: "JSON",
+					success: function (data) {
+						refreshToken()
+						$('#datetimepicker').datetimepicker('destroy')
+						
+						setCalendarPicker()
+						removeSelectedCalendar()
+						getBookedDate()
+						accounts()
+						bookings()
+						setHours(x == '' ? new Date() : x, 1)
+					},
+					error: function (jqXHR, textStatus, errorThrown) {
+						
+					}
+				});
 		}
 
 		function bookings(){
@@ -348,7 +373,7 @@
 					$('#bk_tbl tbody').empty();
 					if(data){
 						$.each(data, function(key, value){
-							$('#bk_tbl tbody').append('<tr><td>'+value.book_date+'</td><td>'+value.service+'</td><td>'+value.full_name+'</td></tr>');
+							$('#bk_tbl tbody').append('<tr><td>'+value.book_date+'</td><td>'+value.service+'</td><td>'+value.full_name+'</td><td><button class="btn btn-sm btn-danger" onclick="cancelbook('+value.id+')">Cancel Booking</button></td></tr>');
 						});
 					}
 					$('#bk_tbl').DataTable();

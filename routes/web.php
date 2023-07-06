@@ -45,5 +45,6 @@ Route::group(['prefix' => "booking",'as' => "booking."], function () {
 	Route::get('my-booking', ['as' => "my_booking", 'uses' => "BookingController@myBooking"]);
 	Route::get('available-date', ['as' => "available_date", 'uses' => "BookingController@getBookedDate"]);
 	Route::post('book-now', ['as' => "book_now", 'uses' => "BookingController@booknow"]);
+	Route::post('cancel-book', ['as' => "cancel_book", 'uses' => "BookingController@cancelbook"]);
 
   });
