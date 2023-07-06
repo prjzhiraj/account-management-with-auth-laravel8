@@ -32,5 +32,3 @@ password: 12345678<br>
   <li>To Cancel your booking, simply press <b>Cancel Booking</b> button</li>
 </ol> 
 <br><br>
-
-# account-management-with-auth-laravel8
