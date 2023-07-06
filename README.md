@@ -11,6 +11,8 @@ credentials:<br>
 email: customer1@email.com, customer2@email.com<br>
 password: 12345678<br>
 
-<img style="width: 140px;" src="/public/img/login_page.JPG">
+<img style="width: 100%;" src="/public/img/login_page.JPG"><br><br>
+<img style="width: 100%;" src="/public/img/book_now_page.JPG"><br><br>
+<img style="width: 100%;" src="/public/img/my_booking_page.JPG"><br><br>
 
 # account-management-with-auth-laravel8
