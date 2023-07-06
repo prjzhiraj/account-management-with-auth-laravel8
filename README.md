@@ -1,6 +1,9 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-create database laravel_knabus<br>
+create database laravel_knabus<br><br>
+
+.env file is provided in this repo.<br>
+make sure the .env is setup correctly, check the credentials and database name in .env if matched to your local server (recommended XAMPP)
 
 <b>On your Terminal/Git Bash:</b><br>
 1.composer install<br>
