@@ -3,9 +3,9 @@
 create database laravel_knabus<br>
 
 <b>On your Terminal/Git Bash:</b><br>
-composer install<br>
-php artisan migrate:fresh --seed<br>
-php artisan serve<br>
+1.composer install<br>
+2.php artisan migrate:fresh --seed<br>
+3.php artisan serve<br>
 <br><br>
 credentials:<br>
 email: customer1@email.com, customer2@email.com<br>
